@@ -78,7 +78,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbTraveling"
+        app:layout_constraintTop_toBottomOf="@+id/cbBelajar"
         app:srcCompat="@android:drawable/ic_delete" />
 
     <ImageButton
@@ -88,11 +88,11 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toStartOf="@+id/imgButtonCancel"
-        app:layout_constraintTop_toBottomOf="@+id/cbTraveling"
+        app:layout_constraintTop_toBottomOf="@+id/cbBelajar"
         app:srcCompat="@android:drawable/ic_input_add" />
 
     <CheckBox
-        android:id="@+id/cbTraveling"
+        android:id="@+id/cbBelajar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -104,10 +104,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/txtHobi"
-        app:layout_constraintTop_toBottomOf="@+id/cbReading" />
+        app:layout_constraintTop_toBottomOf="@+id/cbMakan" />
 
     <CheckBox
-        android:id="@+id/cbReading"
+        android:id="@+id/cbMakan"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -119,10 +119,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/txtHobi"
-        app:layout_constraintTop_toBottomOf="@+id/cbCoding" />
+        app:layout_constraintTop_toBottomOf="@+id/cbOlahraga" />
 
     <CheckBox
-        android:id="@+id/cbCoding"
+        android:id="@+id/cbJalan_jalan"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -137,7 +137,7 @@
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <CheckBox
-        android:id="@+id/cbCoding"
+        android:id="@+id/cbOlahraga"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"

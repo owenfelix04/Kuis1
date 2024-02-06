@@ -16,10 +16,10 @@
             android:name=".Profile"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LatihanMembuatKomponen"
             android:exported="false" />
         <activity
-            android:name=".LatihanMembuatKomponen"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

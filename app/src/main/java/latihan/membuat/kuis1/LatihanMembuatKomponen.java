@@ -16,7 +16,7 @@ public class LatihanMembuatKomponen extends AppCompatActivity {
 
         private EditText editNama;
         private RadioGroup radioGroup;
-        private CheckBox cbOlahraga, cbReading, cbTraveling;
+        private CheckBox cbOlahraga, cbJalan_jalan, cbMakan, cbBelajar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +26,10 @@ public class LatihanMembuatKomponen extends AppCompatActivity {
             // Initialize your views
             editNama = findViewById(R.id.editNama);
             radioGroup = findViewById(R.id.radioGroup);
-            cbCoding = findViewById(R.id.cbCoding);
-            cbReading = findViewById(R.id.cbReading);
-            cbTraveling = findViewById(R.id.cbTraveling);
+            cbOlahraga = findViewById(R.id.cbOlahraga);
+            cbJalan_jalan = findViewById(R.id.cbJalan_jalan);
+            cbMakan = findViewById(R.id.cbMakan);
+            cbBelajar = findViewById(R.id.cbBelajar);
 
             // Initialize ImageButtons
             ImageButton imgButtonAdd = findViewById(R.id.imgButtonAdd);
@@ -81,15 +82,19 @@ public class LatihanMembuatKomponen extends AppCompatActivity {
             StringBuilder selectedHobbies = new StringBuilder();
 
             if (cbOlahraga.isChecked()) {
-                selectedHobbies.append("Coding, ");
+                selectedHobbies.append("Olahraga, ");
             }
 
-            if (cbReading.isChecked()) {
-                selectedHobbies.append("Reading, ");
+            if (cbJalan_jalan.isChecked()) {
+                selectedHobbies.append("Jalan-jalan, ");
             }
 
-            if (cbTraveling.isChecked()) {
-                selectedHobbies.append("Traveling");
+            if (cbMakan.isChecked()) {
+                selectedHobbies.append("Makan");
+            }
+
+            if (cbBelajar.isChecked()) {
+                selectedHobbies.append("Belajar");
             }
 
             return selectedHobbies.toString();
@@ -98,8 +103,9 @@ public class LatihanMembuatKomponen extends AppCompatActivity {
         private void clearInputs() {
             editNama.getText().clear();
             radioGroup.clearCheck();
-            cbCoding.setChecked(false);
-            cbReading.setChecked(false);
-            cbTraveling.setChecked(false);
+            cbOlahraga.setChecked(false);
+            cbJalan_jalan.setChecked(false);
+            cbMakan.setChecked(false);
+            cbBelajar.setChecked(false);
     }
 }
